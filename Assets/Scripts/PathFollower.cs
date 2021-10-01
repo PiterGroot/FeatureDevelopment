@@ -17,6 +17,7 @@ public class PathFollower : MonoBehaviour
         _currentWaypoint = _path.GetPathStart();
     }
     public void PathComplete() {
+        FindObjectOfType<PlayerHealthComponent>().TakeDamage(1);
         Destroy(gameObject);
     }
     private void Update() {

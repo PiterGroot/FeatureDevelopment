@@ -23,6 +23,5 @@ public class Path : MonoBehaviour
             return GetPathEnd();
         }
         return _wayPoints[result];
-
     }
 }
